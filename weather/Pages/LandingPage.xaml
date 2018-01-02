@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="weather.Pages.LandingPage" Title="Weather">
+	<ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Please enter a city name"></Label>
+            <Entry Placeholder="e.g.:London" Text="{Binding CityName}"></Entry>
+            <Button Text="Check weather" TextColor="Teal" Command="{Binding CommandBtnCheckWeather}" BackgroundColor="Silver"></Button>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="weather.Pages.WeatherDetailPage">
+	<ContentPage.Content>
+        <StackLayout Padding="20" HorizontalOptions="CenterAndExpand">
+            <Frame HasShadow="false" BackgroundColor="Gray" Opacity="0.9">
+                <StackLayout>
+                    <Label Text="{Binding CityNameAndCountry}" HorizontalTextAlignment="Center"></Label>
+                    <Label Text="{Binding TemperatureMain}" FontSize="30" HorizontalTextAlignment="Center"></Label>
+                    <Image Source="{Binding ImageIconSource}" WidthRequest="150" HeightRequest="150" Aspect="AspectFill"></Image>
+                    <Label Text="{Binding WeatherDescription}" FontSize="30" HorizontalTextAlignment="Center"></Label>
+
+
+
+                    <Label Text="{Binding TemperatureRange}" TextColor="White"></Label>
+                    <Label Text="{Binding WindSpeed}" TextColor="White"></Label>
+                    <Label Text="{Binding DateTime}" TextColor="White"></Label>
+                </StackLayout>
+            </Frame>
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Button Text="Save it as my favourite city" Command="{Binding CommandBtnSaveFavouriteCity}"></Button>
+            </StackLayout>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
